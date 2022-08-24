@@ -3,12 +3,12 @@
     margin: 0;
     
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,200&display=swap');
 
 body{
     background-color: #fff;
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
     overflow-x: hidden;
 }
 strong{
@@ -17,14 +17,14 @@ strong{
 }
 code{
     
-    color: #4c7ef7;
+    color: hsl(223, 87%, 63%);
 }
 button{
-    background-color: #4c7ef7;
+    background-color: hsl(223, 87%, 63%);
     color: #fff;
     filter: drop-shadow(0 2px 8px rgba(39, 94, 254, 0.32));
     padding: 20px 50px;
-    border: 1px solid #4c7ef7;
+    border: 1px solid hsl(223, 87%, 63%);
     border-radius: 40px;
     margin:20px 20px 20px;
     position: relative;
@@ -47,7 +47,7 @@ input[type="email"] {
 
 input[type="email"]:hover {
    
-    border: 2px solid #4c7ef7;
+    border: 2px solid hsl(223, 87%, 63%);
     border-radius: 40px;
   
    
@@ -57,14 +57,14 @@ input[type="email"]:hover {
     position: relative;
     left: 34px;
     top: 40px;
-    color: #dedede;
+    color: hsl(0, 0%, 59%);
 }
 
 
 
 p{
     font-size: 26px;
-    color: #e6e6e6;
+    color: hsl(209, 33%, 12%);
     position: relative;
     left: 27px;
     top: 42px;
@@ -86,19 +86,33 @@ main{
     position: relative;
     top: 27px;
 }
-
-footer img{
+footer{
+    display: flex;
+  flex-direction: row;
+  
+}
+.footer{
     position: relative;
- top: -40px;
+    top: -64px;
+    left: 190px;
     border: 1px solid #f2f2f4;
-    border-radius: 100px;
-    width: 50px;
-    margin: 20px;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+footer img{
+    
+    position: relative;
+    top: 10px;
+  
+width: 60px;
+height: 40px;
 }
 footer p{
     position: relative;
-    left: 10px;
-    top: -9px;
+    left: -16px;
+    top: 8px;
     font-size: 0.875rem;
 }
 /*tablet*/
@@ -110,7 +124,7 @@ footer p{
     .img img {
         padding-top: 100px;
         width: 600px;
-     
+    
     }
     .img2{
         width: 200px;
@@ -131,7 +145,12 @@ footer p{
     }
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 375px) and (max-width:767px){
+    button{
+        
+        padding: 20px 140px;
+       
+    }
     .img img {
   width: 400px;
     }
@@ -140,10 +159,22 @@ footer p{
     }
 
     input[type="email"] {
+        margin-top: 30px;
         width: 340px;
     }
     .launce{
     left: 8px;
 }
 
+footer p{
+    position: relative;
+    left: -104px;
+    top: 8px;
+    font-size: 0.875rem;
+}
+.footer{
+    
+    left: 100px;
+   
+}
   }
